@@ -22,7 +22,8 @@ public class Main {
         int length = number.toString().length(); //count of digits
         for (int i = 0; i < length; i++) {
             char currentDigit = number.toString().charAt(i);
-            sum += Character.getNumericValue(currentDigit);
+            //sum += Character.getNumericValue(currentDigit);
+            sum += Integer.parseInt(String.valueOf(currentDigit));
         }
         return sum;
     }
